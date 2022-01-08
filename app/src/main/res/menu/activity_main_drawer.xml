@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icons8_barcode_scanner_64"
+            android:title="Leitor" />
+
+        <item
+            android:id="@+id/nav_historico"
+            android:icon="@drawable/icons8_activity_history_96"
+            android:title="Histórico" />
+
+        <item
+            android:id="@+id/nav_edit_cadastro"
+            android:icon="@drawable/icons8_edit_property_50"
+            android:title="Editar Cadastro" />
+
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Sobre"/>
+
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/abc_vector_test"
+            android:title="Sair" />
+    </group>
+</menu>

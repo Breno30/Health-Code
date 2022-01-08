@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.CadastroProduto">
+
+
+    <!-- IMAGEM -->
+    <ImageView
+        android:id="@+id/imagem_produto"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/nome_prod"
+        app:layout_constraintEnd_toEndOf="@+id/nome_prod"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toEndOf="@+id/cd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:src="@drawable/icons8_add_image_64__1_" />
+
+
+    <!-- NOME -->
+    <TextView
+        android:id="@+id/cd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_prod"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_prod_txt"
+            android:hint="Nome do Produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            tools:layout_editor_absoluteX="25dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  DATA DE NASCIMENTO-->
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/marca_prod"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_prod"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/marca_prod_texto_txt"
+            android:hint="Marca do Produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/nova_composicao_cadast_prod"
+        android:hint="Ingrediente"
+        android:layout_width="277dp"
+        android:layout_height="42dp"
+        android:completionThreshold="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/lista_cadast_prod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca_prod"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/adic_cadast_prod"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:backgroundTint="?colorPrimary"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/nova_composicao_cadast_prod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/nova_composicao_cadast_prod"
+        app:layout_constraintTop_toBottomOf="@+id/marca_prod"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--    BOTAO SALVAR-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cadastrar_prod"
+        android:text="CADASTRAR"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#7700F000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <!--    BOTAO RECUPERAR SENHA-->
+
+    <ListView
+        android:id="@+id/lista_cadast_prod"
+        android:layout_width="346dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca_prod"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelar_cadast_prod"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:backgroundTint="#5CFF0000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

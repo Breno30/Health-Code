@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tcc.ui.home.HomeFragment"
+        android:label="Leitor"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_historico"
+        android:name="com.example.tcc.ui.historico.HistoricoFragment"
+        android:label="Histórico"
+        tools:layout="@layout/fragment_historico" />
+
+    <fragment
+        android:id="@+id/nav_edit_cadastro"
+        android:name="com.example.tcc.ui.edit_cadastro.Edit_CadastroFragment"
+        android:label="Editar Cadastro"
+        tools:layout="@layout/fragment_sair" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.example.tcc.ui.sobre.SobreFragment"
+        android:label="Sobre"
+        tools:layout="@layout/fragment_sobre"/>
+
+
+    <fragment
+        android:id="@+id/nav_sair"
+        android:name="com.example.tcc.ui.sair.SairFragment"
+        android:label="sair"
+        tools:layout="@layout/fragment_sair" />
+</navigation>

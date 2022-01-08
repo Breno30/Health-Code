@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.edit_cadastro.Edit_CadastroFragment">
+
+
+    <!-- NOME -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9"
+        app:startIconDrawable="@drawable/name_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_edit_cadast_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:text="Carregando..."
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            tools:layout_editor_absoluteX="25dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  DATA DE NASCIMENTO-->
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/data_de_nascimento"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:startIconDrawable="@drawable/date_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/data_de_nascimento_texto_edit_cadast_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/nova_composicao_edit"
+        android:hint="Novo ingrediente a se evitar"
+        android:layout_width="277dp"
+        android:layout_height="42dp"
+        android:completionThreshold="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/lista_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_de_nascimento"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/adic_edit"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/nova_composicao_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/nova_composicao_edit"
+        app:layout_constraintTop_toTopOf="@+id/nova_composicao_edit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    BOTAO SALVAR-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/salvar"
+        android:text="SALVAR"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#9E00F000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <!--    BOTAO RECUPERAR SENHA-->
+
+    <ListView
+        android:id="@+id/lista_edit"
+        android:layout_width="346dp"
+        android:layout_height="224dp"
+
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nova_composicao"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recuperar"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:text="RECUPERAR SENHA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:backgroundTint="#88FFC107"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deletar_conta"
+        android:text="Desejo Deletar Esta Conta"
+
+        android:backgroundTint="@color/red_less"
+
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/salvar"
+        app:layout_constraintStart_toStartOf="@+id/recuperar"
+        app:layout_constraintTop_toBottomOf="@+id/salvar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

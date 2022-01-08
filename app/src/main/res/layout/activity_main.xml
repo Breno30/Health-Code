@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--BOTÂO SOBRE-->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/info"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#00000000"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <!-- EMAIL -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Email"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:startIconDrawable="@drawable/gmail_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_texto"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- SENHA-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Senha"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/usuario"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:startIconDrawable="@drawable/password_icon">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha_texto"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--RECUPERAR SENHA -->
+
+    <TextView
+        android:id="@+id/recuperar_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="esqueceu a senha?"
+        app:layout_constraintBottom_toTopOf="@+id/signInButton"
+        app:layout_constraintEnd_toEndOf="@+id/senha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/senha"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="#656C68"
+
+        android:clickable="true"/>
+
+    <!--BOTÂO LOGAR-->
+    <Button
+        android:id="@+id/logar"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:text="Entrar"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/recuperar_senha"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recuperar_senha" />
+
+    <!-- OU -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ou"
+        app:layout_constraintBottom_toTopOf="@+id/signInButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <!-- BOTAO GOOGLE-->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInButton"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        app:layout_constraintVertical_bias="0.478"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.65" />
+
+
+
+    <!-- MENSAGEM NA PARTE DE BAIXO-->
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:text="Ainda não tem uma conta?\nFaça uma clicando aqui"
+        android:textColor="#656C68"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+
+        app:layout_constraintVertical_bias="0.587" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

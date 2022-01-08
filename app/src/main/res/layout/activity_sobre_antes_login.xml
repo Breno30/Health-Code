@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity_Sobre_antes_login">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_voltar_login"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:backgroundTint="?colorPrimary"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+
+    <TextView
+        android:text="
+Este app foi desenvolvido como trabalho de conlusão de curso para o técnico de informática do Colégio Técnico Univap (SJC).\n\n
+autores:\n
+▫Breno do Nascimento Silva\n
+▫Erich Oliveira Bedenik\n
+▫Lucas Gabriel de Aquino Rodrigues\n
+\n
+orientador:\n
+▫Prof. Bruno Michel Pera\n
+\n
+email de contato:\n
+tccunivap2021@gmail.com
+"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

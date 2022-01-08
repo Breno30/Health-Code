@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_cadastro">
+
+    <!-- NOME -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Nome"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9"
+        app:startIconDrawable="@drawable/name_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="28dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--  DATA DE NASCIMENTO-->
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/data_de_nascimento2"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Data de Nascimento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:startIconDrawable="@drawable/date_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/data_de_nascimento_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="285dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EMAIL-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Email"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_de_nascimento2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:startIconDrawable="@drawable/gmail_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- SENHA-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senha2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Senha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- SENHA CONFIRMAÇÃO-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senha_confirmacao2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:hint="Confirmação de Senha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.90"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha_confirmacao_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="334dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    BOTAO PROXIMA PAGINA-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cadastro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorPrimary"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/proximo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

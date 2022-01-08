@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/z_xing_scanner"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:borderColor="@color/black"
+
+        app:laserColor="#DD2C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447"
+        app:maskColor="#5C656565">
+
+
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+
+    <LinearLayout
+        android:id="@+id/etPesquisa"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.70">
+
+        <EditText
+            android:id="@+id/BarraPesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/borda_barra_pesquisa"
+            android:hint="   🔍 Pesquise o produto aqui "
+            android:singleLine="true"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsPesquisa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="100dp"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/z_xing_scanner"
+        app:layout_constraintEnd_toEndOf="@+id/etPesquisa"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etPesquisa"
+        app:layout_constraintTop_toBottomOf="@+id/etPesquisa"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.65">
+
+
+        <LinearLayout
+            android:id="@+id/lvPesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borda_resultado_pesquisa"
+            android:elevation="10dp"
+
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
