@@ -8,7 +8,7 @@ Este app foi desenvolvido como trabalho de conlusão de curso para o técnico de
 [![ORIENTADOR](https://img.shields.io/badge/orientador-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF)](https://www.linkedin.com/in/bruno-michel-565b3a184/)<br>
 ▫Prof. Bruno Michel Pera
 
-[![MONOGRAFIA](https://img.shields.io/badge/monografia-em-pdf-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://drive.google.com/file/d/1Mx5bB0pbZLAvxDB_1yiRCbEq_Kbh2wpc/view?usp=sharing)<br>
+[![MONOGRAFIA](https://img.shields.io/badge/monografia%20em%20pdf-%23323330.svg?&style=for-the-badge&logo=repositório&logoColor=black&color=8000FF)](https://drive.google.com/file/d/1Mx5bB0pbZLAvxDB_1yiRCbEq_Kbh2wpc/view?usp=sharing)<br>
 
 
 
