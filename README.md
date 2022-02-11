@@ -1,9 +1,9 @@
 ## Sobre o Projeto
 Este app foi desenvolvido como trabalho de conlusão de curso para o técnico de informática do Colégio Técnico Univap (SJC).<br><br>
 [![AUTORES](https://img.shields.io/badge/autores-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00)](https://github.com/Breno30/TCC)<br>
-▫Breno do Nascimento Silva - Código<br>
-▫Erich Oliveira Bedenik - Design e Documentação<br>
-▫Lucas Gabriel de Aquino Rodrigues - Documentação<br>
+▫Breno do Nascimento Silva            - Código<br>
+▫Erich Oliveira Bedenik               - Design e Documentação<br>
+▫Lucas Gabriel de Aquino Rodrigues    - Documentação<br>
 
 [![ORIENTADOR](https://img.shields.io/badge/orientador-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF)](https://www.linkedin.com/in/bruno-michel-565b3a184/)<br>
 ▫Prof. Bruno Michel Pera
