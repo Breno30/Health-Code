@@ -22,7 +22,10 @@ O aplicativo desenvolvido usa dos seguintes passos para seu funcionamento:<br>
 
 ## Tutorial para rodar App
 Clone o projeto
-### `git clone https://github.com/Breno30/TCC.git`
+```
+git clone https://github.com/Breno30/TCC.git
+```
+
 Crie um projeto no Firebase e conecte o projeto com o App na aba "Projeto OVerview" <br>
 ![image (1)](https://user-images.githubusercontent.com/59184811/152142145-82454fd8-575b-4e2d-8df7-641d1484dab1.png)<br><br>
 Rode o App!
