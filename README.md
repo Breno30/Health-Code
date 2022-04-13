@@ -1,5 +1,7 @@
 ## Sobre o Projeto
 Este app foi desenvolvido como trabalho de conlusão de curso para o técnico de informática do Colégio Técnico Univap (SJC).<br><br>
+Seu objetivo é ajudar pessoas com alergias alimentares, facilitando a maneira na qual esses consumidores identificam diariamente se um certo alimento é seguro de ser ingerido.
+<br><br>
 [![AUTORES](https://img.shields.io/badge/autores-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00)](https://github.com/Breno30/TCC)<br>
 ▫Breno do Nascimento Silva           
 ▫Erich Oliveira Bedenik              
