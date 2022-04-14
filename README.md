@@ -22,6 +22,15 @@ O aplicativo desenvolvido usa dos seguintes passos para seu funcionamento:<br>
 4°: Compara com os ingredientes que o usuário deseja evitar.<br>
 5°: Informa se é seguro para o consumo.<br>
 
+## Principais Funções
+Sign up | Scanner 
+--- | --- 
+<img src="https://github.com/Breno30/TCC/blob/main/app/src/main/res/drawable/tutorial_cadastrar.png" width="270px" >|<img src="https://github.com/Breno30/TCC/blob/main/app/src/main/res/drawable/tutorial_escanear.png" width="270px" >
+
+Pesquisar | Adição de Produto 
+--- | ---
+<img src="https://github.com/Breno30/TCC/blob/main/app/src/main/res/drawable/tutorial_pesquisar.png" width="270px" >|<img src="https://github.com/Breno30/TCC/blob/main/app/src/main/res/drawable/tutorial_adicionar.png" width="270px" >
+
 ## Tutorial para rodar App
 Clone o projeto
 ```
@@ -31,3 +40,9 @@ git clone https://github.com/Breno30/TCC.git
 Crie um projeto no Firebase e conecte o projeto com o App na aba "Projeto OVerview" <br>
 ![image (1)](https://user-images.githubusercontent.com/59184811/152142145-82454fd8-575b-4e2d-8df7-641d1484dab1.png)<br><br>
 Rode o App!
+
+
+
+
+
+
